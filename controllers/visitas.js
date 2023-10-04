@@ -69,7 +69,7 @@ const visitaDelete = async (req, res) => {
     let mensaje = ''
 
     try{
-        const visita = await Robo.deleteOne({documento_paciente:documento_paciente})
+        const visita = await Vista.deleteOne({documento_paciente:documento_paciente})
         mensaje = 'La eliminación se efectuó exitosamente'
     }
     catch(error){
